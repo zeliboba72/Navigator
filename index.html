@@ -7,24 +7,31 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/header/header.css">
+    <link rel="stylesheet" href="styles/intro/intro.css">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 <body>
+
+    <!-- HEADER -->
     <header class="header">
         <div class="container-header">
-                <a href="">
+                <a href="#">
                     <img src="assets/logo.png" alt="Навигатор" class="header__logo-img">
                 </a>
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#" class="header__link">О компании</a>
+                            <a href="#" class="header__link">О компании<span class="shape-icon"></span></a>
+                            
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Коттеджные поселки</a>
+                            <a href="#" class="header__link">Коттеджные поселки<span class="shape-icon"></span></a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Покупателям</a>
+                            <a href="#" class="header__link">Покупателям<span class="shape-icon"></span></a>
                         </li>
                         <li class="header__item">
                             <a href="#" class="header__link">Обслуживающая компания</a>
@@ -38,5 +45,40 @@
                 <button class="button">Заказать звонок</button>
             </div>
     </header>
+    <!-- HEADER -->
+
+    <!-- INTRO -->
+    <article class="intro">
+        <div class="container-intro">
+            <div class="intro__background">
+                <div class="intro__title-wrap">
+                        <h1 class="intro__title">Продажа земельных участков</h1>
+                        <p class="intro__subtitle">под ИЖС в Тюмени</p>
+                </div>
+            </div>
+            <div class="intro__advantages">
+                <!-- <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </article>
+    <!-- INTRO -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/swiper.js"></script>
 </body>
 </html>
+
+
+<!-- Надо было использовать препроцессоры, вебпак и тд? -->
+<!--  -->
+<!-- 1) Рамка интро с градиентом(как правильно верстать) -->   
+<!-- 2) Анимация при ховер у навигации -->
+<!-- 3) Преимущества должны быть изначально слайдером?
+        Как лучше вставлять иконки у преимуществ? -->
