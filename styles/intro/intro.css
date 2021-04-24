@@ -13,25 +13,31 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
+  padding-right: 20px;
 }
 
 .intro__title-wrap {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   min-height: 170px;
   margin: 0 auto;
   position: relative;
-  padding-top: 30px;
+  padding: 20px 20px 20px 20px;
+  padding-right: 20px;
+  border-right: 10px solid #2983d4;
 }
 
 .intro__title-wrap::before {
   content: "";
   display: block;
-  min-height: 100%;
-  width: 10px;
-  background-color: #2983d4;
   position: absolute;
-  right: 0;
   top: 0;
+  bottom: 0;
+  left: -10000px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .intro__title-wrap::after {
@@ -50,6 +56,8 @@
   line-height: 121%;
   color: #ffffff;
   margin-bottom: 5px;
+  position: relative;
+  z-index: 10;
 }
 
 .intro__subtitle {
@@ -57,18 +65,23 @@
   line-height: 121%;
   color: #ffffff;
   font-weight: 400;
+  position: relative;
+  z-index: 10;
 }
 
 /* advantages */
-
 .intro__advantages {
+  padding-right: 20px;
+}
+
+.intro__advantages-content {
   max-width: 1200px;
   min-height: 200px;
   margin: 0 auto;
   position: relative;
 }
 
-.intro__advantages::before {
+.intro__advantages-content::before {
   content: "";
   display: block;
   width: 10px;
@@ -79,7 +92,7 @@
   top: 0;
 }
 
-.intro__advantages::after {
+.intro__advantages-content::after {
   content: "";
   display: block;
   width: 60%;
@@ -105,4 +118,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* break-points */
+
+@media (max-width: 1300px) {
+  .intro__title-wrap {
+    width: 920px;
+    min-height: 110px;
+  }
+  .intro__advantages-content {
+    max-width: 920px;
+  }
+  .intro__title {
+    font-size: 32px;
+  }
+  .intro__subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro__background {
+    min-height: 245px;
+  }
+  .intro__title-wrap {
+    width: 720px;
+  }
+  .intro__advantages-content {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 760px) {
+  .intro__title-wrap {
+    width: 540px;
+  }
+  .intro__advantages-content {
+    max-width: 540px;
+  }
 }
