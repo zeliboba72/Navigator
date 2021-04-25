@@ -123,7 +123,7 @@
 
 /* swiper */
 .intro__swiper.swiper-container {
-  padding: 50px 20px 0 0px;
+  padding: 50px 20px 0 0;
   overflow: visible;
 }
 
