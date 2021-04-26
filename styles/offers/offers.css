@@ -27,7 +27,12 @@
 /* styles swiper */
 
 .offers__swiper.swiper-container {
+  display: none;
   overflow: visible;
+}
+
+.offers__swiper.swiper-container.active {
+  display: block;
 }
 
 .offers__item {
@@ -152,9 +157,16 @@
 /* Yandex-map */
 
 #map {
-  display: none;
   width: 100%;
   height: 500px;
+}
+
+.offers__yandex-map {
+  display: none;
+}
+
+.offers__yandex-map.active {
+  display: block;
 }
 
 /* break-points */
