@@ -14,6 +14,9 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <!-- YANDEX-MAP -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=337e3913-b867-4d9a-a112-f2d10fd1f644&lang=ru_RU" type="text/javascript">
+    </script>
     <title>Document</title>
   </head>
   <body>
@@ -212,8 +215,8 @@
       <div class="offers-container">
         <div class="offers__tabs tabs">
           <div class="offers__tabs-overlay tabs__overlay"></div>
-          <button class="offers__tabs-btn tabs__btn active">Списком</button>
-          <button class="offers__tabs-btn tabs__btn ">На карте</button>
+          <button class="offers__tabs-btn tabs__btn btn-1 active">Списком</button>
+          <button class="offers__tabs-btn tabs__btn btn-2 ">На карте</button>
         </div>
         <div class="offers__swiper swiper-container">
           <div class="offers__swiper-wrapper swiper-wrapper">
@@ -311,6 +314,7 @@
             </div>
           </div>
         </div>
+        <div id="map"></div>
       </div>
     </article>
     <!-- OFFERS -->
@@ -318,7 +322,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/burger.js"></script>
-    <script src="js/tabs.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/yandex-map.js"></script>
   </body>
 </html>
 
