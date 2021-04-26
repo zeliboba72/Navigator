@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper-container", {
+const swiperIntro = new Swiper(".intro__swiper", {
   slidesPerView: 4,
   breakpoints: {
     0: {
@@ -9,6 +9,21 @@ const swiper = new Swiper(".swiper-container", {
     },
     1300: {
       slidesPerView: 4,
+    },
+  },
+});
+
+const swiperOffers = new Swiper(".offers__swiper", {
+  spaceBetween: 30,
+  breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+    },
+    550: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
     },
   },
 });

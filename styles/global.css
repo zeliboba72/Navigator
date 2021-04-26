@@ -7,7 +7,7 @@
 body {
   font-weight: 700;
 }
-
+/* global button */
 .button {
   width: 216px;
   height: 50px;
@@ -28,4 +28,40 @@ body {
 
 .button:focus {
   background-color: #b0e07d;
+}
+
+/* global tabs */
+
+.tabs {
+  display: flex;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid #d1d1d1;
+  position: relative;
+}
+
+.tabs__overlay {
+  position: absolute;
+  background-color: #6bbd45;
+  height: 100%;
+  left: 0;
+  border-radius: 30px;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+
+.tabs__btn {
+  font-size: 16px;
+  color: #675a54;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  transition: color 0.4s ease-in-out;
+}
+
+.tabs__btn.active {
+  font-weight: 700;
+  color: #ffffff;
 }
