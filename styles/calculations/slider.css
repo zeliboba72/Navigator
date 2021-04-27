@@ -1,0 +1,28 @@
+/* незаполнененная часть */
+.calculations__slider.noUi-target {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 14px;
+  border: 1px solid #d1d1d1;
+}
+
+/* заполненная часть */
+.calculations__slider .noUi-connect {
+  background-color: #6bbd45;
+  border: 1px solid #6bbd45;
+}
+
+/* ползунки */
+.calculations__slider.noUi-horizontal .noUi-handle {
+  width: 23px;
+  height: 23px;
+  background-color: #6bbd45;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.24);
+}
+
+.calculations__slider.noUi-horizontal .noUi-handle::after,
+.calculations__slider.noUi-horizontal .noUi-handle::before {
+  display: none;
+}

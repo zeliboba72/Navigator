@@ -20,6 +20,8 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=337e3913-b867-4d9a-a112-f2d10fd1f644&lang=ru_RU"
       type="text/javascript"
     ></script>
+    <!-- NO-UI-SLIDER -->
+    <link rel="stylesheet" href="./noUiSlider/nouislider.min.css">
     <title>Document</title>
   </head>
   <body>
@@ -407,13 +409,34 @@
         <div class="calculations__container">
           <div class="calculations__container-gradient-line"></div>
           <h2 class="calculations__title">Выберите свой участок</h2>
+          <div class="calculations__wrapper">
+            <div class="calculations__slider-wrap">
+              <h4 class="calculations__slider-title">Стоимость</h4>
+              <div id="slider-1" class="calculations__slider"></div>
+              <div class="calculations__min-max-wrap">
+                <span class="calculations__slider-min">380 249 Р</span>
+                <span class="calculations__slider-max">1 907 101 Р</span>
+              </div>
+            </div>
+            <div class="calculations__slider-wrap">
+              <h4 class="calculations__slider-title">Размер участка</h4>
+              <div id="slider-2" class="calculations__slider"></div>
+              <div class="calculations__min-max-wrap">
+                <span class="calculations__slider-min">5 соток</span>
+                <span class="calculations__slider-max">15 соток</span>
+              </div>
+            </div>
+            <button class="button">Подобрать участок</button>
+          </div>
         </div>
       </div>
     </article>
     <!-- CALCULATIONS -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="noUiSlider/nouislider.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/yandex-map.js"></script>
