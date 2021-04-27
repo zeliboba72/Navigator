@@ -116,4 +116,12 @@
     flex: 0 1 auto;
     margin-bottom: 50px;
   }
+
+  .calculations__title {
+    font-size: 22px;
+  }
+
+  .calculations__min-max-wrap {
+    font-size: 15px;
+  }
 }
