@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/header/header.css" />
     <link rel="stylesheet" href="styles/intro/intro.css" />
     <link rel="stylesheet" href="styles/offers/offers.css" />
+    <link rel="stylesheet" href="styles/calculations/calculations.css">
     <!-- SWIPER -->
     <link
       rel="stylesheet"
@@ -260,7 +261,9 @@
                 </div>
                 <div class="offers__item-footer">
                   Участки от 10 до 12 соток
-                  <div class="offers__item-button"></div>
+                  <div class="offers__item-button">
+                    <div class="offers__item-button-arrow"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -297,7 +300,9 @@
                 </div>
                 <div class="offers__item-footer">
                   Участки от 7 до 13 соток
-                  <div class="offers__item-button"></div>
+                  <div class="offers__item-button">
+                    <div class="offers__item-button-arrow"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -335,7 +340,9 @@
                 </div>
                 <div class="offers__item-footer">
                   Участки от 7 до 13 соток
-                  <div class="offers__item-button"></div>
+                  <div class="offers__item-button">
+                    <div class="offers__item-button-arrow"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -372,16 +379,38 @@
                 </div>
                 <div class="offers__item-footer">
                   Продано
-                  <div class="offers__item-button"></div>
+                  <div class="offers__item-button">
+                    <div class="offers__item-button-arrow"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="offers__swiper-btns-wrap">
+            <div class="swiper-button-prev offers__swiper-btn-prev">
+            </div>
+            <div class="swiper-pagination offers__swiper-pagination"></div>
+            <div class="swiper-button-next offers__swiper-btn-next">
+            </div>
+        </div>  
         </div>
-        <div id="map" class="offers__yandex-map"></div>
+        <div id="map" class="offers__yandex-map">
+          <a href="#" class="offers__yandex-map-link">Подобрать участок</a>
+        </div>
       </div>
     </article>
     <!-- OFFERS -->
+
+    <!-- CALCULATIONS -->
+    <article class="calculations">
+      <div class="calculations__background">
+        <div class="calculations__container">
+          <div class="calculations__container-gradient-line"></div>
+          <h2 class="calculations__title">Выберите свой участок</h2>
+        </div>
+      </div>
+    </article>
+    <!-- CALCULATIONS -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
