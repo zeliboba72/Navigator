@@ -1,0 +1,347 @@
+.purchase {
+  margin-bottom: 150px;
+}
+
+.purchase__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.purchase__title {
+  font-size: 36px;
+  color: #675a54;
+  margin-bottom: 40px;
+}
+
+/* tabs */
+.purchase__tabs {
+  max-width: 430px;
+  margin-bottom: 75px;
+  overflow-x: auto;
+}
+
+.purchase__tabs-overlay {
+  width: 40%;
+}
+
+.purchase__tabs-btn.btn-1 {
+  width: 40%;
+}
+
+.purchase__tabs-btn.btn-2 {
+  width: 32%;
+}
+
+.purchase__tabs-btn.btn-3 {
+  width: 28%;
+}
+
+/* stages-block */
+
+.purchase__stages {
+  /* display: flex; */
+  display: none;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.purchase__stages-item {
+  flex: 0 0 20%;
+}
+
+.purchase__stages-circle {
+  width: 114px;
+  height: 114px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.purchase__stages-circle.with--line::after {
+  content: "";
+  display: block;
+  width: 174px;
+  height: 1px;
+  background-color: #d1d1d1;
+  position: absolute;
+  right: -180px;
+  top: 60px;
+}
+
+.desktop--icon {
+  background: url(../../assets/desktop-icon.svg) center no-repeat;
+}
+
+.phone--icon {
+  background: url(../../assets/phone-icon.svg) center no-repeat;
+}
+
+.card--icon {
+  background: url(../../assets/card-icon.svg) center no-repeat;
+}
+
+.plant--icon {
+  background: url(../../assets/plant-icon.svg) center no-repeat;
+}
+
+.purchase__stages-circle-number {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #675a54;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 50%;
+}
+
+.purchase__stages-text {
+  font-size: 14px;
+  line-height: 136%;
+  font-weight: 400;
+  color: #392424;
+}
+
+/* plan-block */
+
+.purchase__plan {
+  /* display: flex; */
+  display: none;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.purchase__plan-link {
+  font-size: 14px;
+  color: #2983d4;
+  position: absolute;
+  top: -110px;
+  right: 0;
+  transition: color 0.2s linear;
+}
+
+.purchase__plan-link:hover {
+  color: #2469a7;
+}
+
+.purchase__plan-item {
+  flex: 0 0 20%;
+}
+
+.purchase__plan-circle {
+  width: 114px;
+  height: 114px;
+  margin-bottom: 25px;
+}
+
+.pig--icon {
+  background: url(../../assets/pig-icon.svg) center no-repeat;
+}
+
+.like--icon {
+  background: url(../../assets/like-icon.svg) center no-repeat;
+}
+
+.shield--icon {
+  background: url(../../assets/shield-icon.svg) center no-repeat;
+}
+
+.star--icon {
+  background: url(../../assets/star-icon.svg) center no-repeat;
+}
+
+.purchase__plan-title {
+  font-size: 18px;
+  color: #675a54;
+  margin-bottom: 20px;
+}
+
+.purchase__plan-text {
+  font-size: 14px;
+  line-height: 136%;
+  font-weight: 400;
+  color: #675a54;
+}
+
+/* mortgage-block */
+
+.purchase__mortgage {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.purchase__mortage-link {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  color: #2983d4;
+  font-size: 14px;
+  transition: color 0.2s linear;
+  margin-right: 50px;
+}
+
+.purchase__mortage-link:hover {
+  color: #2469a7;
+}
+
+.purchase__mortgage-item {
+  flex: 0 0 20%;
+}
+
+.purchase__mortgage-circle {
+  width: 114px;
+  height: 114px;
+  margin-bottom: 25px;
+}
+
+.bank--icon {
+  background: url(../../assets/bank-icon.svg) center no-repeat;
+}
+
+.percent--icon {
+  background: url(../../assets/percent-icon.svg) center no-repeat;
+}
+
+.wallet--icon {
+  background: url(../../assets/wallet-icon.svg) center no-repeat;
+}
+
+.watch--icon {
+  background: url(../../assets/watch-icon.svg) center no-repeat;
+}
+
+.purchase__mortgage-title {
+  font-size: 18px;
+  color: #675a54;
+  margin-bottom: 20px;
+}
+
+.purchase__mortgage-text {
+  font-size: 14px;
+  line-height: 136%;
+  font-weight: 400;
+  color: #675a54;
+}
+
+/* break-points */
+
+@media (max-width: 1300px) {
+  .purchase__container {
+    max-width: 900px;
+  }
+
+  .purchase__stages-circle.with--line::after {
+    width: 95px;
+    right: -100px;
+  }
+
+  .purchase__mortage-link {
+    top: auto;
+    right: auto;
+    bottom: -50px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .purchase__container {
+    max-width: 720px;
+  }
+
+  .purchase__stages-item {
+    flex: 0 0 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .purchase__plan-item {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .purchase__mortgage-item {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .purchase__plan-link {
+    left: 0;
+    top: 100%;
+    right: 0;
+  }
+
+  .purchase__stages-text {
+    text-align: center;
+  }
+
+  .purchase__stages-circle.with--line::after {
+    display: none;
+  }
+}
+
+@media (max-width: 730px) {
+  .purchase__plan-item {
+    flex: 0 0 100%;
+  }
+
+  .purchase__plan-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 660px) {
+  .purchase__mortgage-item {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 570px) {
+  .purchase__title {
+    font-size: 22px;
+  }
+
+  .purchase__tabs {
+    width: 380px;
+  }
+
+  .purchase__tabs-btn {
+    font-size: 14px;
+  }
+
+  .purchase__stages-item {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .purchase__tabs {
+    width: 290px;
+  }
+
+  .purchase__tabs-btn {
+    font-size: 12px;
+  }
+}

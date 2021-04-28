@@ -42,6 +42,10 @@ const swiperAboutImages = new Swiper(".about__images-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
 
 const swiperAboutContent = new Swiper(".about__content-swiper", {
