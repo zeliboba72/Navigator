@@ -17,10 +17,10 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <!-- YANDEX-MAP -->
-    <script
+    <!-- <script
       src="https://api-maps.yandex.ru/2.1/?apikey=337e3913-b867-4d9a-a112-f2d10fd1f644&lang=ru_RU"
       type="text/javascript"
-    ></script>
+    ></script> -->
     <!-- NO-UI-SLIDER -->
     <link rel="stylesheet" href="./noUiSlider/nouislider.min.css">
     <title>Document</title>
@@ -439,26 +439,97 @@
       <div class="about__container">
         <h2 class="about__title">О компании</h2>
         <div class="about__grid">
-          <div class="about__image-swiper"></div>
-          <div class="about__item-1">
+          <div class="about__swiper-images-grid-container">
+            <div class="about__images-swiper swiper-container">
+            <div class="about__images-swiper-wrapper swiper-wrapper">
+              <div class="about__images-swiper-slide swiper-slide">
+                <img src="./assets/place.png" class="about__images-swiper-item">
+              </div>
+              <div class="about__images-swiper-slide swiper-slide">
+                <img src="./assets/place.png" class="about__images-swiper-item">
+              </div>
+              <div class="about__images-swiper-slide swiper-slide">
+                <img src="./assets/place.png" class="about__images-swiper-item">
+              </div>
+              <div class="about__images-swiper-slide swiper-slide">
+                <img src="./assets/place.png" class="about__images-swiper-item">
+              </div>
+              <div class="about__images-swiper-slide swiper-slide">
+                <img src="./assets/place.png" class="about__images-swiper-item">
+              </div>
+              </div>
+              <div class="swiper-pagination about__swiper-pagination"></div>
+            </div>
+        </div>
+          <div class="about__item about__item-1 about__item-desktop">
             <h4 class="about__item-1-title">Более 8 лет на рынке</h4>
             <p class="about__item-1-text">Девелоперская компания «Навигатор» осуществляет продажу земельных участков с готовыми коммуникациями в коттеджных поселках города Тюмени</p>
           </div>
-          <div class="about__item-2">
+          <div class="about__item about__item-2 about__item-desktop">
             <h4 class="about__item-2-title">Профессиональная
               юридическая поддержка</h4>
             <p class="about__item-2-text">Гарант юридической чистоты сделки</p>
           </div>
-          <div class="about__item-3">
+          <div class="about__item about__item-3 about__item-desktop">
             <h4 class="about__item-3-title">Собственная
               <span>обслуживающая компания</span></h4>
             <p class="about__item-3-text">Круглый год следит 
               за чистотой и порядком
               в поселках</p>  
           </div>
-          <div class="about__item-4"></div>
-          <div class="about__item-5"></div>
+          <div class="about__item about__item-4 about__item-desktop">
+            <h4 class="about__item-4-title">Удобное расположение 
+            </h4>
+            <p class="about__item-4-text">Земельные участки расположенны на популярных трактах города в экологически чистых районах.</p>
+          </div>
+          <div class="about__item about__item-5 about__item-desktop">
+            <h4 class="about__item-5-title">Уникальные места</h4>
+            <p class="about__item-5-text">Каждый поселок имеет свою концепцию и отличие.
+              Вы сможете купить земельный участок на берегу реки, рядом с лесом, на холмах или выбрать отличный видовой участок
+              </p>
+          </div>
         </div>
+        <div class="about__content-swiper swiper-container">
+          <div class="about__content-swiper-wrapper swiper-wrapper">
+            <div class="about__content-swiper-slide swiper-slide">
+              <div class="about__item about__item-1">
+                <h4 class="about__item-1-title">Более 8 лет на рынке</h4>
+                <p class="about__item-1-text">Девелоперская компания «Навигатор» осуществляет продажу земельных участков с готовыми коммуникациями в коттеджных поселках города Тюмени</p>
+              </div>
+            </div>
+            <div class="about__content-swiper-slide swiper-slide">
+              <div class="about__item about__item-2">
+                <h4 class="about__item-2-title">Профессиональная
+                  юридическая поддержка</h4>
+                <p class="about__item-2-text">Гарант юридической чистоты сделки</p>
+              </div>
+            </div>
+            <div class="about__content-swiper-slide swiper-slide">
+              <div class="about__item about__item-3">
+                <h4 class="about__item-3-title">Собственная
+                  <span>обслуживающая компания</span></h4>
+                <p class="about__item-3-text">Круглый год следит 
+                  за чистотой и порядком
+                  в поселках</p>  
+              </div>
+            </div>
+            <div class="about__content-swiper-slide swiper-slide">
+              <div class="about__item about__item-4">
+                <h4 class="about__item-4-title">Удобное расположение 
+                </h4>
+                <p class="about__item-4-text">Земельные участки расположенны на популярных трактах города в экологически чистых районах.</p>
+              </div>
+            </div>
+            <div class="about__content-swiper-slide swiper-slide">
+              <div class="about__item about__item-5">
+                <h4 class="about__item-5-title">Уникальные места</h4>
+                <p class="about__item-5-text">Каждый поселок имеет свою концепцию и отличие.
+                  Вы сможете купить земельный участок на берегу реки, рядом с лесом, на холмах или выбрать отличный видовой участок
+                  </p>
+              </div>
+            </div>
+          </div>
+      </div>
       </div>
     </article>
     <!-- ABOUT -->

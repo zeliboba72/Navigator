@@ -34,3 +34,24 @@ const swiperOffers = new Swiper(".offers__swiper", {
     el: ".swiper-pagination",
   },
 });
+
+const swiperAboutImages = new Swiper(".about__images-swiper", {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+const swiperAboutContent = new Swiper(".about__content-swiper", {
+  spaceBetween: 15,
+  breakpoints: {
+    0: {
+      slidesPerView: 1.2,
+    },
+    840: {
+      slidesPerView: 2.2,
+    },
+  },
+});

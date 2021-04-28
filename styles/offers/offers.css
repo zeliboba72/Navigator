@@ -74,14 +74,15 @@
   top: -10px;
 }
 
-.swiper-pagination .swiper-pagination-bullet {
+.swiper-pagination.offers__swiper-pagination .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
   opacity: 1;
   background-color: #d1d1d1;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-pagination.offers__swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 6px;
   height: 6px;
   background-color: #6bbd45;

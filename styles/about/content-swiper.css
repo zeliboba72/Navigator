@@ -1,0 +1,22 @@
+.about__content-swiper.swiper-container {
+  height: 200px;
+}
+
+.about__content-swiper-wrapper.swiper-wrapper,
+.about__content-swiper-slide.swiper-slide {
+  height: 100%;
+}
+
+.about__content-swiper-slide.swiper-slide {
+  width: 900px;
+}
+
+.about__content-swiper-slide.swiper-slide > div {
+  height: 100%;
+}
+
+@media (max-width: 390px) {
+  .about__content-swiper.swiper-container {
+    height: 270px;
+  }
+}
