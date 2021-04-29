@@ -7,6 +7,7 @@ buttonOffersSecond.addEventListener("click", () => {
   if (offersYandexMap.classList.contains("active")) {
     return;
   }
+  ymaps.load(init);
   offersSwiper.classList.remove("active");
   offersYandexMap.classList.add("active");
 });

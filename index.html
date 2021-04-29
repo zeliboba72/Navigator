@@ -9,23 +9,24 @@
     <link rel="stylesheet" href="styles/header/header.css" />
     <link rel="stylesheet" href="styles/intro/intro.css" />
     <link rel="stylesheet" href="styles/offers/offers.css" />
-    <link rel="stylesheet" href="styles/calculations/calculations.css">
-    <link rel="stylesheet" href="styles/about/about.css">
-    <link rel="stylesheet" href="styles/purchase/purchase.css">
-    <link rel="stylesheet" href="styles/viewing/viewing.css">
-    <link rel="stylesheet" href="styles/why/why.css">
+    <link rel="stylesheet" href="styles/calculations/calculations.css" />
+    <link rel="stylesheet" href="styles/about/about.css" />
+    <link rel="stylesheet" href="styles/purchase/purchase.css" />
+    <link rel="stylesheet" href="styles/viewing/viewing.css" />
+    <link rel="stylesheet" href="styles/why/why.css" />
     <!-- SWIPER -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
     <!-- YANDEX-MAP -->
-    <!-- <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=337e3913-b867-4d9a-a112-f2d10fd1f644&lang=ru_RU"
+    <script
+      async
+      src="https://api-maps.yandex.ru/2.1/?apikey=337e3913-b867-4d9a-a112-f2d10fd1f644&loadByRequire=1&lang=ru_RU"
       type="text/javascript"
-    ></script> -->
+    ></script>
     <!-- NO-UI-SLIDER -->
-    <link rel="stylesheet" href="./noUiSlider/nouislider.min.css">
+    <link rel="stylesheet" href="./noUiSlider/nouislider.min.css" />
     <title>Document</title>
   </head>
   <body>
@@ -237,10 +238,13 @@
               <div class="offers__item">
                 <div class="offers__item-image-wrap">
                   <div class="offers__item-circle-logo">
-                    <img src="./assets/alpiskaya-dolina.png" alt="" />
+                    <img
+                      src="./assets/alpiskaya-dolina.png"
+                      alt="Альпийская долина"
+                    />
                   </div>
                   <img
-                    src="./assets/offers-image-1.png"
+                    src="./assets/offers-image-1.jpg"
                     class="offers__image"
                   />
                   <div class="offers__item-title">Альпийская долина</div>
@@ -277,10 +281,10 @@
               <div class="offers__item">
                 <div class="offers__item-image-wrap">
                   <div class="offers__item-circle-logo">
-                    <img src="./assets/esenino.png" alt="" />
+                    <img src="./assets/esenino.png" alt="Есенино" />
                   </div>
                   <img
-                    src="./assets/offers-image-2.png"
+                    src="./assets/offers-image-2.jpg"
                     class="offers__image"
                   />
                   <div class="offers__item-title">Есенино</div>
@@ -316,10 +320,10 @@
               <div class="offers__item">
                 <div class="offers__item-image-wrap">
                   <div class="offers__item-circle-logo">
-                    <img src="./assets/elki.png" alt="" />
+                    <img src="./assets/elki.png" alt="Ёлки" />
                   </div>
                   <img
-                    src="./assets/offers-image-3.png"
+                    src="./assets/offers-image-3.jpg"
                     class="offers__image"
                   />
                   <div class="offers__item-title">Ёлки</div>
@@ -356,10 +360,10 @@
               <div class="offers__item sold">
                 <div class="offers__item-image-wrap">
                   <div class="offers__item-circle-logo">
-                    <img src="./assets/ushakovo.png" alt="" />
+                    <img src="./assets/ushakovo.png" alt="Ушакова" />
                   </div>
                   <img
-                    src="./assets/offers-image-4.png"
+                    src="./assets/offers-image-4.jpg"
                     class="offers__image"
                   />
                   <div class="offers__item-title">Ушаково</div>
@@ -393,12 +397,10 @@
             </div>
           </div>
           <div class="offers__swiper-btns-wrap">
-            <div class="swiper-button-prev offers__swiper-btn-prev">
-            </div>
+            <div class="swiper-button-prev offers__swiper-btn-prev"></div>
             <div class="swiper-pagination offers__swiper-pagination"></div>
-            <div class="swiper-button-next offers__swiper-btn-next">
-            </div>
-        </div>  
+            <div class="swiper-button-next offers__swiper-btn-next"></div>
+          </div>
         </div>
         <div id="map" class="offers__yandex-map">
           <a href="#" class="offers__yandex-map-link">Подобрать участок</a>
@@ -418,19 +420,29 @@
               <h4 class="calculations__slider-title">Стоимость</h4>
               <div id="slider-1" class="calculations__slider"></div>
               <div class="calculations__min-max-wrap">
-                <span class="calculations__slider-min js-min-first">500 000 Р</span>
-                <span class="calculations__slider-max js-max-first">3 825 000 Р</span>
+                <span class="calculations__slider-min js-min-first"
+                  >500 000 Р</span
+                >
+                <span class="calculations__slider-max js-max-first"
+                  >3 825 000 Р</span
+                >
               </div>
             </div>
             <div class="calculations__slider-wrap">
               <h4 class="calculations__slider-title">Размер участка</h4>
               <div id="slider-2" class="calculations__slider"></div>
               <div class="calculations__min-max-wrap">
-                <span class="calculations__slider-min js-min-second">5 соток</span>
-                <span class="calculations__slider-max js-max-second">15 соток</span>
+                <span class="calculations__slider-min js-min-second"
+                  >5 соток</span
+                >
+                <span class="calculations__slider-max js-max-second"
+                  >15 соток</span
+                >
               </div>
             </div>
-            <button class="calculations__button button">Подобрать участок</button>
+            <button class="calculations__button button">
+              Подобрать участок
+            </button>
           </div>
         </div>
       </div>
@@ -444,52 +456,82 @@
         <div class="about__grid">
           <div class="about__swiper-images-grid-container">
             <div class="about__images-swiper swiper-container">
-            <div class="about__images-swiper-wrapper swiper-wrapper">
-              <div class="about__images-swiper-slide swiper-slide">
-                <img src="./assets/place.png" class="about__images-swiper-item">
-              </div>
-              <div class="about__images-swiper-slide swiper-slide">
-                <img src="./assets/place.png" class="about__images-swiper-item">
-              </div>
-              <div class="about__images-swiper-slide swiper-slide">
-                <img src="./assets/place.png" class="about__images-swiper-item">
-              </div>
-              <div class="about__images-swiper-slide swiper-slide">
-                <img src="./assets/place.png" class="about__images-swiper-item">
-              </div>
-              <div class="about__images-swiper-slide swiper-slide">
-                <img src="./assets/place.png" class="about__images-swiper-item">
-              </div>
+              <div class="about__images-swiper-wrapper swiper-wrapper">
+                <div class="about__images-swiper-slide swiper-slide">
+                  <img
+                    src="./assets/place.jpg"
+                    class="about__images-swiper-item"
+                    alt="Наш банк"
+                  />
+                </div>
+                <div class="about__images-swiper-slide swiper-slide">
+                  <img
+                    src="./assets/place.jpg"
+                    class="about__images-swiper-item"
+                    alt="Наш банк"
+                  />
+                </div>
+                <div class="about__images-swiper-slide swiper-slide">
+                  <img
+                    src="./assets/place.jpg"
+                    class="about__images-swiper-item"
+                    alt="Наш банк"
+                  />
+                </div>
+                <div class="about__images-swiper-slide swiper-slide">
+                  <img
+                    src="./assets/place.jpg"
+                    class="about__images-swiper-item"
+                    alt="Наш банк"
+                  />
+                </div>
+                <div class="about__images-swiper-slide swiper-slide">
+                  <img
+                    src="./assets/place.jpg"
+                    class="about__images-swiper-item"
+                    alt="Наш банк"
+                  />
+                </div>
               </div>
               <div class="swiper-pagination about__swiper-pagination"></div>
             </div>
-        </div>
+          </div>
           <div class="about__item about__item-1 about__item-desktop">
             <h4 class="about__item-1-title">Более 8 лет на рынке</h4>
-            <p class="about__item-1-text">Девелоперская компания «Навигатор» осуществляет продажу земельных участков с готовыми коммуникациями в коттеджных поселках города Тюмени</p>
+            <p class="about__item-1-text">
+              Девелоперская компания «Навигатор» осуществляет продажу земельных
+              участков с готовыми коммуникациями в коттеджных поселках города
+              Тюмени
+            </p>
           </div>
           <div class="about__item about__item-2 about__item-desktop">
-            <h4 class="about__item-2-title">Профессиональная
-              юридическая поддержка</h4>
+            <h4 class="about__item-2-title">
+              Профессиональная юридическая поддержка
+            </h4>
             <p class="about__item-2-text">Гарант юридической чистоты сделки</p>
           </div>
           <div class="about__item about__item-3 about__item-desktop">
-            <h4 class="about__item-3-title">Собственная
-              <span>обслуживающая компания</span></h4>
-            <p class="about__item-3-text">Круглый год следит 
-              за чистотой и порядком
-              в поселках</p>  
+            <h4 class="about__item-3-title">
+              Собственная <span>обслуживающая компания</span>
+            </h4>
+            <p class="about__item-3-text">
+              Круглый год следит за чистотой и порядком в поселках
+            </p>
           </div>
           <div class="about__item about__item-4 about__item-desktop">
-            <h4 class="about__item-4-title">Удобное расположение 
-            </h4>
-            <p class="about__item-4-text">Земельные участки расположенны на популярных трактах города в экологически чистых районах.</p>
+            <h4 class="about__item-4-title">Удобное расположение</h4>
+            <p class="about__item-4-text">
+              Земельные участки расположенны на популярных трактах города в
+              экологически чистых районах.
+            </p>
           </div>
           <div class="about__item about__item-5 about__item-desktop">
             <h4 class="about__item-5-title">Уникальные места</h4>
-            <p class="about__item-5-text">Каждый поселок имеет свою концепцию и отличие.
-              Вы сможете купить земельный участок на берегу реки, рядом с лесом, на холмах или выбрать отличный видовой участок
-              </p>
+            <p class="about__item-5-text">
+              Каждый поселок имеет свою концепцию и отличие. Вы сможете купить
+              земельный участок на берегу реки, рядом с лесом, на холмах или
+              выбрать отличный видовой участок
+            </p>
           </div>
         </div>
         <div class="about__content-swiper swiper-container">
@@ -497,38 +539,50 @@
             <div class="about__content-swiper-slide swiper-slide">
               <div class="about__item about__item-1">
                 <h4 class="about__item-1-title">Более 8 лет на рынке</h4>
-                <p class="about__item-1-text">Девелоперская компания «Навигатор» осуществляет продажу земельных участков с готовыми коммуникациями в коттеджных поселках города Тюмени</p>
+                <p class="about__item-1-text">
+                  Девелоперская компания «Навигатор» осуществляет продажу
+                  земельных участков с готовыми коммуникациями в коттеджных
+                  поселках города Тюмени
+                </p>
               </div>
             </div>
             <div class="about__content-swiper-slide swiper-slide">
               <div class="about__item about__item-2">
-                <h4 class="about__item-2-title">Профессиональная
-                  юридическая поддержка</h4>
-                <p class="about__item-2-text">Гарант юридической чистоты сделки</p>
+                <h4 class="about__item-2-title">
+                  Профессиональная юридическая поддержка
+                </h4>
+                <p class="about__item-2-text">
+                  Гарант юридической чистоты сделки
+                </p>
               </div>
             </div>
             <div class="about__content-swiper-slide swiper-slide">
               <div class="about__item about__item-3">
-                <h4 class="about__item-3-title">Собственная
-                  <span>обслуживающая компания</span></h4>
-                <p class="about__item-3-text">Круглый год следит 
-                  за чистотой и порядком
-                  в поселках</p>  
+                <h4 class="about__item-3-title">
+                  Собственная <span>обслуживающая компания</span>
+                </h4>
+                <p class="about__item-3-text">
+                  Круглый год следит за чистотой и порядком в поселках
+                </p>
               </div>
             </div>
             <div class="about__content-swiper-slide swiper-slide">
               <div class="about__item about__item-4">
-                <h4 class="about__item-4-title">Удобное расположение 
-                </h4>
-                <p class="about__item-4-text">Земельные участки расположенны на популярных трактах города в экологически чистых районах.</p>
+                <h4 class="about__item-4-title">Удобное расположение</h4>
+                <p class="about__item-4-text">
+                  Земельные участки расположенны на популярных трактах города в
+                  экологически чистых районах.
+                </p>
               </div>
             </div>
             <div class="about__content-swiper-slide swiper-slide">
               <div class="about__item about__item-5">
                 <h4 class="about__item-5-title">Уникальные места</h4>
-                <p class="about__item-5-text">Каждый поселок имеет свою концепцию и отличие.
-                  Вы сможете купить земельный участок на берегу реки, рядом с лесом, на холмах или выбрать отличный видовой участок
-                  </p>
+                <p class="about__item-5-text">
+                  Каждый поселок имеет свою концепцию и отличие. Вы сможете
+                  купить земельный участок на берегу реки, рядом с лесом, на
+                  холмах или выбрать отличный видовой участок
+                </p>
               </div>
             </div>
           </div>
@@ -543,34 +597,42 @@
         <h2 class="purchase__title">Купить участок просто</h2>
         <div class="purchase__tabs tabs">
           <div class="purchase__tabs-overlay tabs__overlay"></div>
-          <button class="purchase__tabs-btn btn-1 tabs__btn active">Этапы покупки</button>
+          <button class="purchase__tabs-btn btn-1 tabs__btn active">
+            Этапы покупки
+          </button>
           <button class="purchase__tabs-btn btn-2 tabs__btn">Рассрочка</button>
           <button class="purchase__tabs-btn btn-3 tabs__btn">Ипотека</button>
         </div>
         <div class="purchase__stages active">
           <div class="purchase__stages-item">
-              <div class="purchase__stages-circle desktop--icon with--line">
-                <div class="purchase__stages-circle-number">1</div>
-              </div>
-              <p class="purchase__stages-text">Оставьте заявку на обратный звонок</p>
+            <div class="purchase__stages-circle desktop--icon with--line">
+              <div class="purchase__stages-circle-number">1</div>
+            </div>
+            <p class="purchase__stages-text">
+              Оставьте заявку на обратный звонок
+            </p>
           </div>
           <div class="purchase__stages-item">
             <div class="purchase__stages-circle phone--icon with--line">
               <div class="purchase__stages-circle-number">2</div>
             </div>
-            <p class="purchase__stages-text">Мы позвоним и пригласим вас на экскурсию или в офис</p>
+            <p class="purchase__stages-text">
+              Мы позвоним и пригласим вас на экскурсию или в офис
+            </p>
           </div>
           <div class="purchase__stages-item">
             <div class="purchase__stages-circle card--icon with--line">
               <div class="purchase__stages-circle-number">3</div>
             </div>
-            <p class="purchase__stages-text">Выберем с вами удобный способ оплаты</p>
+            <p class="purchase__stages-text">
+              Выберем с вами удобный способ оплаты
+            </p>
           </div>
           <div class="purchase__stages-item">
             <div class="purchase__stages-circle plant--icon">
-            <div class="purchase__stages-circle-number">4</div>
-          </div>
-          <p class="purchase__stages-text">Участок ваш!</p>
+              <div class="purchase__stages-circle-number">4</div>
+            </div>
+            <p class="purchase__stages-text">Участок ваш!</p>
           </div>
         </div>
         <div class="purchase__plan">
@@ -578,30 +640,28 @@
           <div class="purchase__plan-item">
             <div class="purchase__plan-circle pig--icon"></div>
             <h4 class="purchase__plan-title">Выгодно</h4>
-            <p class="purchase__plan-text">0% без переплат
-              до 12 месяцев</p>
+            <p class="purchase__plan-text">0% без переплат до 12 месяцев</p>
           </div>
           <div class="purchase__plan-item">
             <div class="purchase__plan-circle like--icon"></div>
             <h4 class="purchase__plan-title">Удобно</h4>
-            <p class="purchase__plan-text">Первоначальный платеж
-              от 30 000 рублей</p>
+            <p class="purchase__plan-text">
+              Первоначальный платеж от 30 000 рублей
+            </p>
           </div>
           <div class="purchase__plan-item">
             <div class="purchase__plan-circle shield--icon"></div>
             <h4 class="purchase__plan-title">Гарантированно</h4>
-            <p class="purchase__plan-text">Предварительное одобрение
-              100%</p>
+            <p class="purchase__plan-text">Предварительное одобрение 100%</p>
           </div>
           <div class="purchase__plan-item">
             <div class="purchase__plan-circle star--icon"></div>
             <h4 class="purchase__plan-title">Эксклюзивно</h4>
-            <p class="purchase__plan-text">Индивидуальное
-              обсуждение условий</p>
+            <p class="purchase__plan-text">Индивидуальное обсуждение условий</p>
           </div>
         </div>
         <div class="purchase__mortgage">
-            <a href="#" class="purchase__mortage-link">Подробнее об ипотеке</a>
+          <a href="#" class="purchase__mortage-link">Подробнее об ипотеке</a>
           <div class="purchase__mortgage-item">
             <div class="purchase__mortgage-circle bank--icon"></div>
             <h4 class="purchase__mortgage-title">Ведущие банки</h4>
@@ -622,7 +682,7 @@
             <h4 class="purchase__mortgage-title">Срок</h4>
             <p class="purchase__mortgage-text">от 7 до 30 лет</p>
           </div>
-        </div> 
+        </div>
       </div>
     </article>
     <!-- PURCHASE -->
@@ -634,18 +694,30 @@
           <div class="border-container-gradient-line"></div>
           <div class="viewing__title-text-wrap">
             <h2 class="viewing__title">Запишитесь на просмотр</h2>
-            <p class="viewing__text">Эксперт по недвижимости быстро подберет вам подходящий вариант земельного участка. А еще проведёт вам экскурсию по счастливой загородной жизни. </p>
+            <p class="viewing__text">
+              Эксперт по недвижимости быстро подберет вам подходящий вариант
+              земельного участка. А еще проведёт вам экскурсию по счастливой
+              загородной жизни.
+            </p>
           </div>
           <form class="viewing__form">
-            <input type="text" placeholder="Имя" class="viewing__input">
-            <input type="text" placeholder="Телефон" class="viewing__input">
-            <button type="submit" class="button viewing__submit">Записаться</button>
+            <input type="text" placeholder="Имя" class="viewing__input" />
+            <input type="text" placeholder="Телефон" class="viewing__input" />
+            <button type="submit" class="button viewing__submit">
+              Записаться
+            </button>
             <div class="viewing__checkbox-wrap">
-              <input type="checkbox" class="checkbox" id="checkbox">
-              <label class="viewing__checkbox checkbox-style" for="checkbox"></label>
-              <p class="viewing__checkbox-text">Подтверждаю согласие с <strong>политикой обработки персональных данных</strong></p>
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label
+                class="viewing__checkbox checkbox-style"
+                for="checkbox"
+              ></label>
+              <p class="viewing__checkbox-text">
+                Подтверждаю согласие с
+                <strong>политикой обработки персональных данных</strong>
+              </p>
             </div>
-            </form>
+          </form>
         </div>
       </div>
     </article>
@@ -658,10 +730,10 @@
         <div class="why__items-swiper swiper-container">
           <div class="why__items-swiper-wrapper swiper-wrapper">
             <div class="why__items-swiper-slide swiper-slide">
-                <div class="why__item-1 why__item">
-                  Газ 4м³
-                  <div class="why__item-icon gaz--icon"></div>
-                </div>
+              <div class="why__item-1 why__item">
+                Газ 4м³
+                <div class="why__item-icon gaz--icon"></div>
+              </div>
             </div>
             <div class="why__items-swiper-slide swiper-slide">
               <div class="why__item-2 why__item">Уличное освещение</div>
@@ -676,7 +748,10 @@
               </div>
             </div>
             <div class="why__items-swiper-slide swiper-slide">
-              <div class="why__item-5 why__item">Электричество<br> 10-15 кВт</div>
+              <div class="why__item-5 why__item">
+                Электричество<br />
+                10-15 кВт
+              </div>
             </div>
             <div class="why__items-swiper-slide swiper-slide">
               <div class="why__item-6 why__item"></div>
@@ -700,8 +775,13 @@
                 <div class="why__info-swiper-slide swiper-slide">
                   <div class="why__info-swiper-item">
                     <div class="why__info-swiper-title-text-wrap">
-                      <h4 class="why__info-swiper-title">Программа «Лояльный покупатель»</h4>
-                      <p class="why__info-swiper-text">Дарим скидку 10% при 100% оплате земельного участка в любом из наших коттеджных поселков</p>
+                      <h4 class="why__info-swiper-title">
+                        Программа «Лояльный покупатель»
+                      </h4>
+                      <p class="why__info-swiper-text">
+                        Дарим скидку 10% при 100% оплате земельного участка в
+                        любом из наших коттеджных поселков
+                      </p>
                     </div>
                     <div class="why__info-swiper-icon percent-big-icon"></div>
                   </div>
@@ -709,8 +789,15 @@
                 <div class="why__info-swiper-slide swiper-slide">
                   <div class="why__info-swiper-item">
                     <div class="why__info-swiper-title-text-wrap">
-                      <h4 class="why__info-swiper-title">Рассказываем и показываем</h4>
-                      <p class="why__info-swiper-text">Наши специалисты в удобное для вас время проведут экскурсии по коттеджным поселкам компании «Навигатор», расскажут и покажут все преимущества жизни за городом в красивых и благоустроенных поселках.</p>
+                      <h4 class="why__info-swiper-title">
+                        Рассказываем и показываем
+                      </h4>
+                      <p class="why__info-swiper-text">
+                        Наши специалисты в удобное для вас время проведут
+                        экскурсии по коттеджным поселкам компании «Навигатор»,
+                        расскажут и покажут все преимущества жизни за городом в
+                        красивых и благоустроенных поселках.
+                      </p>
                     </div>
                     <div class="why__info-swiper-icon eye-icon"></div>
                   </div>
@@ -718,8 +805,14 @@
                 <div class="why__info-swiper-slide swiper-slide">
                   <div class="why__info-swiper-item">
                     <div class="why__info-swiper-title-text-wrap">
-                      <h4 class="why__info-swiper-title">Сопровождение сделки юристом</h4>
-                      <p class="why__info-swiper-text">Ведущий юрисконсульт окажет полный спектр услуг – от оформления договора купли-продажи до сдачи документов на государственную регистрацию.</p>
+                      <h4 class="why__info-swiper-title">
+                        Сопровождение сделки юристом
+                      </h4>
+                      <p class="why__info-swiper-text">
+                        Ведущий юрисконсульт окажет полный спектр услуг – от
+                        оформления договора купли-продажи до сдачи документов на
+                        государственную регистрацию.
+                      </p>
                     </div>
                     <div class="why__info-swiper-icon case-icon"></div>
                   </div>
@@ -728,7 +821,11 @@
                   <div class="why__info-swiper-item">
                     <div class="why__info-swiper-title-text-wrap">
                       <h4 class="why__info-swiper-title">Поможем с выбором</h4>
-                      <p class="why__info-swiper-text">Купить земельный участок в Тюмени под ИЖС очень просто: мы всегда предложим оптимальный вариант с учетом ваших пожеланий и представлений!</p>
+                      <p class="why__info-swiper-text">
+                        Купить земельный участок в Тюмени под ИЖС очень просто:
+                        мы всегда предложим оптимальный вариант с учетом ваших
+                        пожеланий и представлений!
+                      </p>
                     </div>
                     <div class="why__info-swiper-icon click-icon"></div>
                   </div>
@@ -738,16 +835,16 @@
             <div class="why__swiper-footer-wrap">
               <button class="why__button button">Подобрать участок</button>
               <div class="why-swiper-btns-pagination-wrapper">
-                <div class="why__swiper-btn-prev swiper-button-prev">
-                </div>
+                <div class="why__swiper-btn-prev swiper-button-prev"></div>
                 <div class="why__swiper-pagination swiper-pagination"></div>
-                <div class="why__swiper-btn-next swiper-button-next">
-                </div>
+                <div class="why__swiper-btn-next swiper-button-next"></div>
               </div>
             </div>
-            
           </div>
-          <div class="why__item-5 why__item">Электричество<br> 10-15 кВт</div>
+          <div class="why__item-5 why__item">
+            Электричество<br />
+            10-15 кВт
+          </div>
           <div class="why__item-6 why__item"></div>
         </div>
       </div>
@@ -756,13 +853,12 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="noUiSlider/nouislider.min.js"></script>
+    <script src="./js/yandex-map.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/tabs.js"></script>
-    <script src="./js/yandex-map.js"></script>
     <script src="./js/offers-tabs.js"></script>
     <script src="./js/purchase-tabs.js"></script>
   </body>
 </html>
-

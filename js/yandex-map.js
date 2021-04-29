@@ -1,4 +1,4 @@
-ymaps.ready(function () {
+function init() {
   var myMap = new ymaps.Map(
       "map",
       {
@@ -78,4 +78,4 @@ ymaps.ready(function () {
     .add(placemarkElki)
     .add(placemarkEsenino)
     .add(placemarkAlpDolina);
-});
+}

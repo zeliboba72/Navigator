@@ -15,6 +15,7 @@ const swiperIntro = new Swiper(".intro__swiper", {
 
 const swiperOffers = new Swiper(".offers__swiper", {
   spaceBetween: 30,
+  lazy: true,
   breakpoints: {
     0: {
       slidesPerView: 1.1,
@@ -37,6 +38,7 @@ const swiperOffers = new Swiper(".offers__swiper", {
 
 const swiperAboutImages = new Swiper(".about__images-swiper", {
   slidesPerView: 1,
+  lazy: true,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
