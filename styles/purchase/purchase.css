@@ -40,11 +40,14 @@
 /* stages-block */
 
 .purchase__stages {
-  /* display: flex; */
   display: none;
   justify-content: space-between;
   padding: 0 20px;
   flex-wrap: wrap;
+}
+
+.purchase__stages.active {
+  display: flex;
 }
 
 .purchase__stages-item {
@@ -111,12 +114,15 @@
 /* plan-block */
 
 .purchase__plan {
-  /* display: flex; */
   display: none;
   justify-content: space-between;
   padding: 0 20px;
   flex-wrap: wrap;
   position: relative;
+}
+
+.purchase__plan.active {
+  display: flex;
 }
 
 .purchase__plan-link {
@@ -174,11 +180,15 @@
 /* mortgage-block */
 
 .purchase__mortgage {
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding: 0 20px;
   flex-wrap: wrap;
   position: relative;
+}
+
+.purchase__mortgage.active {
+  display: flex;
 }
 
 .purchase__mortage-link {

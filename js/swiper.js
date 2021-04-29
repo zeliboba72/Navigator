@@ -59,3 +59,13 @@ const swiperAboutContent = new Swiper(".about__content-swiper", {
     },
   },
 });
+
+const swiperWhyInfo = new Swiper(".why__info-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+  },
+});

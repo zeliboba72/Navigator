@@ -1,0 +1,157 @@
+.viewing {
+  margin-bottom: 150px;
+}
+
+.viewing__title-text-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.viewing__title {
+  flex: 0 1 250px;
+  font-size: 36px;
+  line-height: 122%;
+  color: #675a54;
+  margin-right: 50px;
+}
+
+.viewing__text {
+  flex: 0 1 500px;
+  font-size: 16px;
+  line-height: 137%;
+  font-weight: 400;
+  color: #675a54;
+}
+
+.viewing__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.viewing__input {
+  flex: 0 1 355px;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  padding: 17px 20px;
+  margin-right: 30px;
+}
+
+.viewing__input:focus {
+  outline: none;
+  box-shadow: 0 0 3px 1px #6bbd45;
+}
+
+.viewing__checkbox-wrap {
+  flex: 0 1 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.viewing__checkbox {
+  margin-right: 15px;
+}
+
+.viewing__checkbox-text {
+  font-size: 13px;
+  color: #827d7b;
+  line-height: 123%;
+  font-weight: 400;
+}
+
+@media (max-width: 1300px) {
+  .viewing__container {
+    max-width: 920px;
+    padding-left: 80px;
+  }
+
+  .viewing__title {
+    font-size: 28px;
+  }
+
+  .viewing__text {
+    font-size: 14px;
+  }
+
+  .viewing__input {
+    flex: 0 1 280px;
+  }
+
+  .button.viewing__submit {
+    flex: 0 1 170px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .viewing__container {
+    max-width: 720px;
+    padding: 50px 15px 30px 50px;
+  }
+
+  .viewing__title {
+    font-size: 24px;
+  }
+
+  .viewing__text {
+    font-size: 13px;
+  }
+
+  .viewing__input {
+    flex: 0 1 45%;
+    order: -1;
+  }
+  .button.viewing__submit {
+    flex: 0 1 350px;
+    margin: 0 auto;
+  }
+
+  .viewing__checkbox-wrap {
+    order: -1;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .viewing__title-text-wrap {
+    flex-direction: column;
+    margin-bottom: 28px;
+  }
+
+  .viewing__title {
+    flex: 0 1 auto;
+    height: auto;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .viewing__text {
+    flex: 0 1 auto;
+  }
+
+  .viewing__form {
+    flex-direction: column;
+  }
+
+  .viewing__input {
+    flex: 0 0 50px;
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+
+  .viewing__checkbox-wrap {
+    margin-top: 0;
+  }
+
+  .viewing__checkbox-text {
+    line-height: 150%;
+  }
+
+  .button.viewing__submit {
+    width: 100%;
+    max-width: 350px;
+    flex: 0 0 50px;
+  }
+}
