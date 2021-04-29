@@ -63,9 +63,24 @@ const swiperAboutContent = new Swiper(".about__content-swiper", {
 const swiperWhyInfo = new Swiper(".why__info-swiper", {
   slidesPerView: 1,
   spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".why__swiper-btn-next",
+    prevEl: ".why__swiper-btn-prev",
+  },
+  pagination: {
+    el: ".why__swiper-pagination",
+  },
+});
+
+const swiperWhyItems = new Swiper(".why__items-swiper", {
+  spaceBetween: 15,
   breakpoints: {
     0: {
-      slidesPerView: 1,
+      slidesPerView: 1.1,
+    },
+    900: {
+      slidesPerView: 2.1,
     },
   },
 });
