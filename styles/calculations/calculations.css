@@ -1,7 +1,7 @@
 @import "./slider.css";
 
 .calculations {
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .calculations__title {
@@ -47,6 +47,9 @@
 /* break-points */
 
 @media (max-width: 1300px) {
+  .calculations {
+    margin-bottom: 80px;
+  }
   .calculations__container {
     max-width: 920px;
     padding-left: 80px;

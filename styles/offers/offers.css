@@ -1,5 +1,5 @@
 .offers {
-  padding: 100px 0;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 
@@ -297,6 +297,10 @@
     max-width: 920px;
   }
 
+  .offers__tabs {
+    margin-bottom: 25px;
+  }
+
   .offers__item {
     height: 300px;
   }
@@ -332,6 +336,9 @@
 }
 
 @media (max-width: 1024px) {
+  .offers {
+    margin-bottom: 70px;
+  }
   .offers-container {
     max-width: 720px;
   }
