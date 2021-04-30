@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/purchase/purchase.css" />
     <link rel="stylesheet" href="styles/viewing/viewing.css" />
     <link rel="stylesheet" href="styles/why/why.css" />
+    <link rel="stylesheet" href="styles/questions/questions.css">
     <!-- SWIPER -->
     <link
       rel="stylesheet"
@@ -701,20 +702,20 @@
             </p>
           </div>
           <form class="viewing__form">
-            <input type="text" placeholder="Имя" class="viewing__input" />
-            <input type="text" placeholder="Телефон" class="viewing__input" />
+            <input type="text" placeholder="Имя" class="viewing__input input" />
+            <input type="text" placeholder="Телефон" class="viewing__input input" />
             <button type="submit" class="button viewing__submit">
               Записаться
             </button>
-            <div class="viewing__checkbox-wrap">
-              <input type="checkbox" class="checkbox" id="checkbox" />
+            <div class="viewing__checkbox-wrap checkbox-wrap">
+              <input type="checkbox" class="checkbox" id="checkbox-viewing" />
               <label
                 class="viewing__checkbox checkbox-style"
-                for="checkbox"
+                for="checkbox-viewing"
               ></label>
-              <p class="viewing__checkbox-text">
+              <p class="viewing__checkbox-text checkbox-text">
                 Подтверждаю согласие с
-                <strong>политикой обработки персональных данных</strong>
+                <a href="#" class="link-politics">политикой обработки персональных данных</a>
               </p>
             </div>
           </form>
@@ -850,6 +851,35 @@
       </div>
     </article>
     <!-- WHY -->
+
+    <!-- QUESTIONS -->
+    <article class="questions">
+      <div class="questions__background">
+        <div class="questions__container">
+          <div class="questions__title-text-wrap">
+            <h2 class="questions__title">Появились вопросы?</h2>
+            <p class="questions__text">Оставьте свой телефон и мы свяжемся с вами</p>
+          </div>
+          <form class="questions__form">
+            <input type="text" placeholder="Имя" class="questions__input input">
+            <input type="text" placeholder="Телефон" class="questions__input input">
+            <button type="submit" class="questions__button button">Отправить</button>
+            <div class="questions__checkbox-wrap checkbox-wrap">
+              <input type="checkbox" class="checkbox" id="checkbox-questions" />
+              <label
+                class="questions__checkbox checkbox-style"
+                for="checkbox-questions"
+              ></label>
+              <p class="questions__checkbox-text checkbox-text">
+                Подтверждаю согласие с
+                <a href="#" class="link-politics">политикой обработки персональных данных</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </article>
+    <!-- QUESTIONS -->
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="noUiSlider/nouislider.min.js"></script>

@@ -1,0 +1,141 @@
+.questions {
+  margin-bottom: 100px;
+}
+
+.questions__background {
+  max-width: 1820px;
+  min-height: 224px;
+  background-color: #f3efed;
+  margin: 0 auto;
+  position: relative;
+}
+
+.questions__background:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(to left, #6bbd45 50%, #2983d4 70%);
+}
+
+.questions__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  min-height: 224px;
+  margin: 0 auto;
+  padding: 60px 20px 20px 20px;
+}
+
+.questions__title-text-wrap {
+  margin-right: 18px;
+}
+
+.questions__title {
+  font-size: 36px;
+  color: #675a54;
+  margin-bottom: 20px;
+}
+
+.questions__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #675a54;
+  line-height: 136%;
+}
+
+.questions__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-height: 100px;
+  width: 60%;
+}
+
+.questions__input.input {
+  max-width: 220px;
+}
+
+.questions__checkbox.checkbox-style {
+  margin-right: 15px;
+}
+
+/* break-points */
+
+@media (max-width: 1300px) {
+  .questions__container {
+    max-width: 900px;
+  }
+
+  .questions__container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .questions__title-text-wrap {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  .questions__title {
+    text-align: center;
+  }
+
+  .questions__text {
+    text-align: center;
+  }
+
+  .questions__form {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 600px;
+    margin-bottom: 30px;
+  }
+
+  .questions__input.input {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    order: -1;
+  }
+
+  .questions__checkbox-wrap.checkbox-wrap {
+    max-width: 400px;
+    margin-bottom: 25px;
+    order: -1;
+  }
+
+  .questions__button.button {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .questions__container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 670px) {
+  .questions__title {
+    font-size: 24px;
+  }
+
+  .questions__text {
+    font-size: 13px;
+  }
+
+  .questions__checkbox-text.checkbox-text {
+    font-size: 12px;
+    line-height: 150%;
+  }
+}

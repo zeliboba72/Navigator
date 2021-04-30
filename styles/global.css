@@ -148,3 +148,40 @@ body {
 .checkbox:focus + .checkbox-style {
   box-shadow: 0 0 3px 1px #6bbd45;
 }
+
+.checkbox-wrap {
+  flex: 0 1 100%;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-text {
+  font-size: 13px;
+  color: #827d7b;
+  line-height: 123%;
+  font-weight: 400;
+}
+
+.link-politics {
+  font-weight: 700;
+  color: #827d7b;
+  transition: color 0.2s linear;
+}
+
+.link-politics:hover {
+  color: #6bbd45;
+}
+/* input */
+
+.input {
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #d1d1d1;
+  background-color: #ffffff;
+  padding: 17px 20px;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 3px 1px #6bbd45;
+}
