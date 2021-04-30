@@ -86,3 +86,75 @@ const swiperWhyItems = new Swiper(".why__items-swiper", {
     },
   },
 });
+
+const swiperWhatsNewNews = new Swiper(".whats-new__news-swiper", {
+  spaceBetween: 15,
+  breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+    },
+    600: {
+      slidesPerView: 2,
+    },
+    1300: {
+      slidesPerView: 3,
+    },
+  },
+  navigation: {
+    nextEl: ".btn-next-news",
+    prevEl: ".btn-prev-news",
+  },
+  pagination: {
+    el: ".pagination-news",
+  },
+  observer: true,
+  observeParents: true,
+});
+
+const swiperWhatsNewStories = new Swiper(".whats-new__stories-swiper", {
+  spaceBetween: 15,
+  breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+    },
+    600: {
+      slidesPerView: 2,
+    },
+    1300: {
+      slidesPerView: 3,
+    },
+  },
+  navigation: {
+    nextEl: ".btn-next-stories",
+    prevEl: ".btn-prev-stories",
+  },
+  pagination: {
+    el: ".pagination-stories",
+  },
+  observer: true,
+  observeParents: true,
+});
+
+const swiperWhatsNewArticles = new Swiper(".whats-new__articles-swiper", {
+  spaceBetween: 15,
+  breakpoints: {
+    0: {
+      slidesPerView: 1.1,
+    },
+    600: {
+      slidesPerView: 2,
+    },
+    1300: {
+      slidesPerView: 3,
+    },
+  },
+  navigation: {
+    nextEl: ".btn-next-articles",
+    prevEl: ".btn-prev-articles",
+  },
+  pagination: {
+    el: ".pagination-articles",
+  },
+  observer: true,
+  observeParents: true,
+});

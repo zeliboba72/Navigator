@@ -12,6 +12,13 @@ const buttonsPurchase = document.querySelectorAll(".purchase__tabs-btn");
 
 animateTabs(buttonsPurchase, overlayPurchase, tabsPurchase);
 
+// whats-new
+const tabsWhatsNew = document.querySelector(".whats-new__tabs");
+const overlayWhatsNew = document.querySelector(".whats-new__tabs-overlay");
+const buttonsWhatsNew = document.querySelectorAll(".whats-new__tabs-btn");
+
+animateTabs(buttonsWhatsNew, overlayWhatsNew, tabsWhatsNew);
+
 function animateTabs(btns, overlay, container) {
   btns.forEach((el) => {
     el.addEventListener("click", () => {

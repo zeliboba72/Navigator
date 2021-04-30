@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/viewing/viewing.css" />
     <link rel="stylesheet" href="styles/why/why.css" />
     <link rel="stylesheet" href="styles/questions/questions.css">
+    <link rel="stylesheet" href="styles/whats-new/whats-new.css">
     <!-- SWIPER -->
     <link
       rel="stylesheet"
@@ -881,6 +882,239 @@
     </article>
     <!-- QUESTIONS -->
 
+    <!-- WHATS-NEW -->
+    <article class="whats-new">
+      <div class="whats-new__container">
+        <h2 class="whats-new__title">А что у нас нового?</h2>
+        <div class="whats-new__tabs-pagination-wrapper">
+          <div class="whats-new__tabs tabs">
+            <div class="whats-new__tabs-overlay tabs__overlay"></div>
+            <button class="whats-new__tabs-btn tabs__btn whats-new-btn-1 active">
+              Новости
+            </button>
+            <button class="whats-new__tabs-btn tabs__btn whats-new-btn-2">
+              Истории жителей
+            </button>
+            <button class="whats-new__tabs-btn tabs__btn whats-new-btn-3">
+              Полезные статьи
+            </button>
+          </div>
+          <div class="whats-new__swiper-btns-pagination-wrapper wrapper--news active">
+            <div class="whats-new__swiper-btn-prev swiper-button-prev btn-prev-news"></div>
+            <div class="whats-new__swiper-pagination swiper-pagination pagination-news"></div>
+            <div class="whats-new__swiper-btn-next swiper-button-next btn-next-news"></div>
+          </div>
+          <div class="whats-new__swiper-btns-pagination-wrapper wrapper--stories">
+            <div class="whats-new__swiper-btn-prev swiper-button-prev btn-prev-stories"></div>
+            <div class="whats-new__swiper-pagination swiper-pagination pagination-stories"></div>
+            <div class="whats-new__swiper-btn-next swiper-button-next btn-next-stories"></div>
+          </div>
+          <div class="whats-new__swiper-btns-pagination-wrapper wrapper--articles">
+            <div class="whats-new__swiper-btn-prev swiper-button-prev btn-prev-articles"></div>
+            <div class="whats-new__swiper-pagination swiper-pagination pagination-articles"></div>
+            <div class="whats-new__swiper-btn-next swiper-button-next btn-next-articles"></div>
+          </div>
+        </div> 
+        <div class="whats-new__news-swiper swiper-container active">
+          <div class="whats-new__news-swiper-wrapper swiper-wrapper">
+            <div class="whats-new__news-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/news-image-1.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">Итоги зимнего праздника 
+                    в «Альпийской долине»</h4>
+                  <p class="whats-new__swiper-item-text">Вот и наступила Масленичная неделя — праздник, справедливо считающийся одним из самых «кулинарных» праздников</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date">4.03.2019</span>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="whats-new__news-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/news-image-2.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">Индексация размера оплаты</h4>
+                  <p class="whats-new__swiper-item-text">С 01.04.2019 года производится индексация размера платы на 3,64%</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date">1.03.2019</span>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="whats-new__news-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/news-image-3.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">Ограничение на проезд тяжелой техники</h4>
+                  <p class="whats-new__swiper-item-text">В КП "Альпийская долина", "Ёлки", "Ушаково" и "Есенино" закрыт проезд для грузовой техники</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date">25.03.2019</span>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="whats-new__news-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/news-image-4.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">В «Есенино» появилось видеонаблюдение</h4>
+                  <p class="whats-new__swiper-item-text">В парке отдыха КП "Есенино" запущено видеонаблюдение.</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date">24.01.2019</span>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="whats-new__stories-swiper swiper-container">
+          <div class="whats-new__stories-swiper-wrapper swiper-wrapper">
+            <div class="whats-new__stories-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/stories-image-1.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">Интервью с Чернышовым Иваном</h4>
+                  <p class="whats-new__swiper-item-text">Наш собственник рассказал о том, как выглядит дом мечты и почему он приобрел участок в «Есенино»</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date"></span>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="whats-new__stories-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/stories-image-2.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">История Анатолия Прокопьева и его семьи</h4>
+                  <p class="whats-new__swiper-item-text">Собственник участка в «Альпийской долине» поделился мнением о загородной жизни</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date"></span>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="whats-new__stories-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/stories-image-3.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">Есенино — поселок для отдыха и души</h4>
+                  <p class="whats-new__swiper-item-text">Жительница «Есенино» Елена поделилась мыслями о будущей жизни в поселке</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date"></span>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="whats-new__stories-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/stories-image-4.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">Елена Панова о жизни в «Альпийской долине»</h4>
+                  <p class="whats-new__swiper-item-text">Интервью о жизни в поселке</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date"></span>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div> 
+        <div class="whats-new__articles-swiper swiper-container">
+          <div class="whats-new__articles-swiper-wrapper swiper-wrapper">
+            <div class="whats-new__articles-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/articles-image-1.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">Когда лучше покупать земельный участок</h4>
+                  <p class="whats-new__swiper-item-text">У каждого сезона есть свои преимущества и недостатки. Разбираемся вместе!</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date"></span>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="whats-new__articles-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/articles-image-2.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">Баня на участке — располагаем правильно</h4>
+                  <p class="whats-new__swiper-item-text">Поговорим о важных нюанасах размещения бани на загородном участке</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date"></span>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="whats-new__articles-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/articles-image-3.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">Как выбрать участок для загородного дома?</h4>
+                  <p class="whats-new__swiper-item-text">Рынок загородной недвижимости
+                    в Тюмени пестрит разнообразием. 
+                    Как не ошибиться?</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date"></span>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="whats-new__articles-swiper-slide swiper-slide">
+              <div class="whats-new__swiper-item">
+                <div class="whats-new__swiper-image-container">
+                  <img src="./assets/articles-image-4.jpg" alt="Превью" class="whats-new__swiper-image">
+                </div>
+                <div class="whats-new__swiper-item-content">
+                  <h4 class="whats-new__swiper-item-title">Террасирование участка на склоне</h4>
+                  <p class="whats-new__swiper-item-text">Что делать если ваш участок на склоне? Создаем необычный дизайн 
+                    на холмистом рельефе.</p>
+                  <div class="whats-new__swiper-item-footer">
+                    <a href="#" class="whats-new__swiper-item-link">Читать далее</a>
+                    <span class="whats-new__swiper-item-date"></span>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- WHATS-NEW -->
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="noUiSlider/nouislider.min.js"></script>
     <script src="./js/yandex-map.js"></script>
@@ -890,5 +1124,6 @@
     <script src="./js/tabs.js"></script>
     <script src="./js/offers-tabs.js"></script>
     <script src="./js/purchase-tabs.js"></script>
+    <script src="./js/whats-new-tabs.js"></script>
   </body>
 </html>
