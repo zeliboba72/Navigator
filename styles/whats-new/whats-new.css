@@ -52,9 +52,11 @@
   .swiper-slide.swiper-slide-visible
   .whats-new__swiper-item {
   opacity: 1;
+  pointer-events: all;
 }
 
 .whats-new__swiper-item {
+  pointer-events: none;
   position: relative;
   height: 520px;
   border: 1px solid #d1d1d1;
@@ -135,6 +137,10 @@
 }
 
 @media (max-width: 1024px) {
+  .whats-new {
+    margin-bottom: 60px;
+  }
+
   .whats-new__container {
     max-width: 720px;
   }
@@ -183,6 +189,12 @@
 
   .whats-new__swiper-item-date {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 720px) {
+  .whats-new {
+    margin-bottom: 40px;
   }
 }
 

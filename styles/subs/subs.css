@@ -1,0 +1,156 @@
+.subs {
+  background-color: #392424;
+  min-height: 110px;
+  margin-bottom: 100px;
+}
+
+.subs__container {
+  padding: 15px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.subs__title-wrap {
+  flex: 0 0 270px;
+  display: flex;
+  margin-right: 24px;
+}
+
+.subs__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 137%;
+  color: #ffffff;
+  width: 167px;
+}
+
+.subs__title-letter-icon {
+  flex: 0 0 64px;
+  height: 45px;
+  background: url(../../assets/mail-icon.svg) center no-repeat;
+  margin-right: 20px;
+}
+
+.subs__form {
+  flex: 0 1 550px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+
+.subs__input.input {
+  width: 100%;
+  max-width: 280px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.subs__checkbox-wrap.checkbox-wrap {
+  width: 100%;
+}
+
+.subs__checkbox.checkbox-style {
+  margin-right: 10px;
+}
+
+.subs__checkbox-text.checkbox-text {
+  line-height: 150%;
+}
+
+.subs__icons-wrap {
+  flex: 0 0 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+/* icons */
+
+.subs__icon-link:hover .icon-social {
+  fill: #6bbd45;
+}
+
+.icon-social {
+  margin-right: 20px;
+  fill: #ffffff;
+  transition: fill 0.2s linear;
+}
+
+/* break-points */
+
+@media (max-width: 1300px) {
+  .subs__container {
+    max-width: 920px;
+  }
+
+  .subs__input.input {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+    order: -1;
+  }
+
+  .subs__checkbox-wrap.checkbox-wrap {
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .subs__button.button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .subs__container {
+    max-width: 720px;
+  }
+
+  .subs__title-wrap {
+    flex: 0 0 auto;
+    flex-direction: column;
+  }
+
+  .subs__title-letter-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .subs__container {
+    padding: 40px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subs__title-wrap {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .subs__title-letter-icon {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .subs__title {
+    width: auto;
+  }
+
+  .subs__form {
+    flex: 0 0 auto;
+    margin-right: 0;
+  }
+
+  .subs__icons-wrap {
+    flex: 0 0 auto;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
