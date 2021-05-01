@@ -47,6 +47,13 @@
 
 /* swiper-item */
 
+.whats-new
+  .swiper-container.active
+  .swiper-slide.swiper-slide-visible
+  .whats-new__swiper-item {
+  opacity: 1;
+}
+
 .whats-new__swiper-item {
   position: relative;
   height: 520px;
@@ -55,6 +62,8 @@
   overflow: hidden;
   transition: box-shadow 0.2s linear;
   cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in;
 }
 
 .whats-new__swiper-item:hover {
@@ -132,10 +141,12 @@
 
   .whats-new__title {
     font-size: 24px;
+    margin-bottom: 30px;
   }
 
   .whats-new__tabs-pagination-wrapper {
     overflow-x: auto;
+    margin-bottom: 30px;
   }
 
   .whats-new__tabs.tabs {

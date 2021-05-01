@@ -99,17 +99,24 @@
   display: block;
 }
 
+.offers__swiper-slide.swiper-slide.swiper-slide-visible .offers__item {
+  pointer-events: all;
+  opacity: 1;
+}
+
 .offers__item {
+  pointer-events: none;
+  opacity: 0.6;
   height: 500px;
   border: 1px solid rgba(209, 209, 209, 0.5);
   border-radius: 3px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  transition: box-shadow 0.2s linear;
+  transition: box-shadow 0.2s ease-in, opacity 0.2s ease-in;
 }
 
-.offers__item.sold {
+.offers__swiper-slide.swiper-slide.swiper-slide-visible .offers__item.sold {
   opacity: 0.5;
 }
 

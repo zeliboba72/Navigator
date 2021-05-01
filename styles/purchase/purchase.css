@@ -1,5 +1,5 @@
 .purchase {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .purchase__container {
@@ -193,12 +193,11 @@
 
 .purchase__mortage-link {
   position: absolute;
-  top: -100px;
+  top: -110px;
   right: 0;
   color: #2983d4;
   font-size: 14px;
   transition: color 0.2s linear;
-  margin-right: 50px;
 }
 
 .purchase__mortage-link:hover {
@@ -251,16 +250,13 @@
     max-width: 900px;
   }
 
+  .purchase__title {
+    font-size: 22px;
+  }
+
   .purchase__stages-circle.with--line::after {
     width: 95px;
     right: -100px;
-  }
-
-  .purchase__mortage-link {
-    top: auto;
-    right: auto;
-    bottom: -50px;
-    left: 20px;
   }
 }
 
@@ -297,7 +293,8 @@
     margin-bottom: 40px;
   }
 
-  .purchase__plan-link {
+  .purchase__plan-link,
+  .purchase__mortage-link {
     left: 0;
     top: 100%;
     right: 0;
@@ -343,6 +340,11 @@
 
   .purchase__stages-item {
     flex: 0 0 100%;
+  }
+
+  .purchase__stages-item.last--item {
+    height: 170px;
+    margin-bottom: 0;
   }
 }
 

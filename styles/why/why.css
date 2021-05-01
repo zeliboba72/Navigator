@@ -1,7 +1,7 @@
 @import "./why-swiper-info.css";
 
 .why {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .why__container {
@@ -161,6 +161,10 @@
 }
 
 @media (max-width: 670px) {
+  .why {
+    margin-bottom: 30px;
+  }
+
   .why__info-swiper-slide.swiper-slide {
     margin-bottom: 30px;
   }

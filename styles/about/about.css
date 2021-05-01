@@ -93,6 +93,10 @@
 }
 
 @media (max-width: 1300px) {
+  .about {
+    margin-bottom: 70px;
+  }
+
   .about__container {
     max-width: 920px;
   }
@@ -123,6 +127,10 @@
 }
 
 @media (max-width: 1024px) {
+  .about {
+    margin-bottom: 40px;
+  }
+
   .about__container {
     max-width: 720px;
   }

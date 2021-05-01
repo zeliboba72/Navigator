@@ -4,6 +4,7 @@
   padding: 30px;
   border: 1px solid #d1d1d1;
   border-radius: 3px;
+  overflow: hidden;
 }
 
 .why__info-swiper.swiper-container {

@@ -1,5 +1,6 @@
 const swiperIntro = new Swiper(".intro__swiper", {
   slidesPerView: 4,
+  watchSlidesVisibility: true,
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -16,6 +17,7 @@ const swiperIntro = new Swiper(".intro__swiper", {
 const swiperOffers = new Swiper(".offers__swiper", {
   spaceBetween: 30,
   lazy: true,
+  watchSlidesVisibility: true,
   breakpoints: {
     0: {
       slidesPerView: 1.1,
@@ -89,6 +91,7 @@ const swiperWhyItems = new Swiper(".why__items-swiper", {
 
 const swiperWhatsNewNews = new Swiper(".whats-new__news-swiper", {
   spaceBetween: 15,
+  watchSlidesVisibility: true,
   breakpoints: {
     0: {
       slidesPerView: 1.1,
@@ -113,6 +116,7 @@ const swiperWhatsNewNews = new Swiper(".whats-new__news-swiper", {
 
 const swiperWhatsNewStories = new Swiper(".whats-new__stories-swiper", {
   spaceBetween: 15,
+  watchSlidesVisibility: true,
   breakpoints: {
     0: {
       slidesPerView: 1.1,
@@ -137,6 +141,7 @@ const swiperWhatsNewStories = new Swiper(".whats-new__stories-swiper", {
 
 const swiperWhatsNewArticles = new Swiper(".whats-new__articles-swiper", {
   spaceBetween: 15,
+  watchSlidesVisibility: true,
   breakpoints: {
     0: {
       slidesPerView: 1.1,
